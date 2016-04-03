@@ -1,6 +1,19 @@
 @import 'font-awesome';
 
+body{
+	// background-color: gray;	
+background: rgb(228,245,252); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(228,245,252,1) 0%, rgba(191,232,249,1) 50%, rgba(159,216,239,1) 51%, rgba(42,176,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(228,245,252,1) 0%,rgba(191,232,249,1) 50%,rgba(159,216,239,1) 51%,rgba(42,176,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4f5fc', endColorstr='#2ab0ed',GradientType=0 ); 
+}
 
+.app{
+
+	margin: 0;
+	height: 100vh;
+}
 
 
 ul {
@@ -13,11 +26,57 @@ ul {
 
 // LISTVIEW//////////////////
 
+.list-view-wrapper{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	width: 450px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+
+}
+
+.LV-header p{
+	padding-bottom: 15px;
+	border-bottom: 1px dotted black;
+	font-weight: bold;
+}
+
+.LV-header{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
 .LV-username img {
 
 	width: 50px;
+	height: 50px;
 	margin-right: 25px;
+	vertical-align: middle;
+	margin-bottom: 10px;
+	border-radius: 25px;
+	object-fit: cover;
 }
+
+.LV-username li:hover {
+	color: #B8E297;
+
+
+}
+
+
+.LV-username img:hover {
+	opacity: 0.4;
+
+
+
+}
+
 
 
 
@@ -25,14 +84,59 @@ ul {
 
 // SINGLEVIEW////////////////
 
+.single-view-wrapper{
+	margin-top: 50px;
+	margin-left: 50px;
+	font-family: sans-serif;
+	width: 450px;
+	height: 600px;
+	overflow: scroll;
+	border: 1px solid black;
+	border-radius: 15px;
+	background-color: black;
+	color: white;
+
+}
+
+.single-view-wrapper li {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 100px;
+	margin-bottom: 10px;
+}
+
+.single-view-wrapper li:hover{
+	color: #B8E297;
+}
+
 
 .SV-header img {
-	width: 350px;
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	object-fit: cover;
+	margin-left: 25px;
+	margin-top: 25px;
+	margin-bottom: 25px;
 }
 
 
 button {
-	margin-bottom: 100%;
+	margin-left: 15px;
+	vertical-align: top;
+	margin-top: 25px;
 }
+
+
+
+
+.single-view-wrapper li{
+	margin-left: 40px;
+}
+
+
+
+
+
 
 

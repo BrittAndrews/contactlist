@@ -30,7 +30,7 @@ render(){
 
 		<div className ="list-view-wrapper">
 			<div className="LV-header">
-				<p>ARTISTS CONTACTS</p>
+				<p>CONTACTS</p>
 			</div>
 
 			<ul className="LV-username">
